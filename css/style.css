@@ -5778,4 +5778,18 @@ ul.footer-nav li a:hover {
 	.page-content img {
 		width: 90%;
 	}
+	
+	#home, #content {
+		height: 710px;
+	}
+
+	#content {
+		height: 710px;
+		background-image: url(../images/slider/bg1.png);
+		background-size: 100% 710px;
+	}
+
+	#main-slide .item img{
+		height: 710px;
+	}
 }
