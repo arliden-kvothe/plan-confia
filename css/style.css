@@ -36,7 +36,6 @@
 
 
 
-
 /*------------------------------------------*/
 /*	     01 - General & Basic Styles
 /*------------------------------------------*/
@@ -46,7 +45,8 @@ body {
     line-height: 21px;
 	font-weight: 300;
 	color: #888;
-	background-color: #D7393C;
+	/*background-color: #D7393C;*/
+	/*margin-bottom: 100px;*/
 	/*background: url(../images/patterns/1.png) fixed repeat;*/
 }
 strong, b {
@@ -856,7 +856,7 @@ ul.social-list li:last-child a i {
 .carousel-indicators li{
 	width: 14px !important;
 	height: 14px !important;
-	border: 2px solid #fff !important;
+	border: 1px solid #ee3733 !important;
 	margin: 1px !important;
 }
 
@@ -4082,7 +4082,10 @@ footer {
 	background-color: #D7393c;
 	/*padding-top: 25px;*/
 	/* border-top: 4px solid #555; */
-	color: #fff;
+  	bottom: 0;
+ 	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 94px;
 }
 
 footer p {
@@ -4670,11 +4673,6 @@ ul.footer-nav li a:hover {
 	}
 	
 }
-
-
-
-
-
 
 
 /* 
@@ -5633,8 +5631,6 @@ ul.footer-nav li a:hover {
   text-align:right; 
 }
 
-
-
 .purchase {
     background: url(../images/parallax/bg-01.jpg) no-repeat;
     background-attachment: fixed;
@@ -5660,7 +5656,7 @@ ul.footer-nav li a:hover {
 	font-size: 14px;
 }
 
-@media(min-width:992px) {
+@media(min-width: 992px) {
     .text-center {
 		margin-bottom: 35px;
 	}
@@ -5673,6 +5669,20 @@ ul.footer-nav li a:hover {
 	}
 	.text-center p.animated2 img {
 		max-width: 80%;
+		margin-top: 25px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-center p.animated6 img {
+		max-width: 80%;
+		margin-top: 25px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-center p.animated4 img.center-image {
+		max-width: 40%;
 		margin-top: 25px;
 		display: block;
 		margin-left: auto;
@@ -5700,6 +5710,9 @@ ul.footer-nav li a:hover {
 	.text-justify p.right-text {
     	padding-left: 190px;
 	}
+	.carousel .item.active .title-center p.animated5 {
+		font-size: 30px;
+	}
 	.carousel .item.active .title-left p.animated4 {
 		text-align: left;
 		font-size: 30px;
@@ -5709,9 +5722,15 @@ ul.footer-nav li a:hover {
 		font-size: 30px;
 		padding-left: 190px;
 	}
-	.img-responsive.footer-image {
+	.img-responsive.footer-image-atlas {
 		max-width: 50%;
 		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.img-responsive.footer-image-paralife {
+		max-width: 50%;
+		margin-top: 25px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -5727,17 +5746,11 @@ ul.footer-nav li a:hover {
 	.footer-widget.footer-atlas p {
 		margin-top: 30px;
 	}
+	
 	.footer-widget.footer-atlas-two p {
 		margin-top: 20px;
 	}
-	#main-slide .item img.img-plan-confia-one {
-		width:80%;
-		height:80%;
-	}
-	#main-slide .item img.img-plan-confia-two {
-		width:80%;
-		height:80%;
-	}
+	
 	.page-content p {
 		font-size: 15px;
 	}
@@ -5745,9 +5758,48 @@ ul.footer-nav li a:hover {
 	.page-content img {
 		width: 90%;
 	}
+
+	.img-responsive.header-image {
+		max-width: 25%;
+		margin-top: -10px;
+	}
+	
+	#main-slide .item img.img-bg {
+		min-width: 115%;
+	}
+
+	#main-slide .item img.img-plan-confia-one {
+		width:  80%;
+		height: 80%;
+	}
+
+	#main-slide .item img.img-plan-confia-two {
+		width:80%;
+		height:80%;
+	}
+
+	#content {
+		height: 573px;
+	}
 }
 
-@media(min-height:768px) {
+/*@media(min-height:900px) and (min-width: 1280px) {
+	#home, #content {
+		height: 710px;
+	}
+
+	#content {
+		height: 710px;
+		background-image: url(../images/slider/bg1.png);
+		background-size: 100% 710px;
+	}
+
+	#main-slide .item img{
+		height: 710px;
+	}
+}*/
+
+/*@media(min-height:768px) and (min-width: 1325px) {
 	#home, #content {
 		height: 570px;
 	}
@@ -5761,4 +5813,10 @@ ul.footer-nav li a:hover {
 	#main-slide .item img{
 		height: 570px;
 	}
+
+	.img-responsive.header-image {
+		max-width: 25%;
+		margin-top: -10px;
+	}
 }
+*/
