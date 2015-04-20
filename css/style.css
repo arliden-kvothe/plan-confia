@@ -45,7 +45,7 @@ body {
     line-height: 21px;
 	font-weight: 300;
 	color: #888;
-	/*background-color: #D7393C;*/
+	background-color: #D7393C;
 	/*margin-bottom: 100px;*/
 	/*background: url(../images/patterns/1.png) fixed repeat;*/
 }
@@ -5783,40 +5783,108 @@ ul.footer-nav li a:hover {
 	}
 }
 
-/*@media(min-height:900px) and (min-width: 1280px) {
-	#home, #content {
-		height: 710px;
+@media (min-width: 768px) {
+	.footer-widget {
+		margin-bottom: 25px;
+	}
+
+	.img-responsive.footer-image-atlas {
+		max-width: 20%;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.img-responsive.footer-image-paralife {
+		max-width: 22%;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-widget p {
+		text-align: center;
+		font-weight: 500;
+		color: #fff;
+		font-size: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#main-slide .item img.img-bg {
+		min-width: 160%;
+	}
+
+	#main-slide .item img.img-plan-confia-one {
+		width:  30%;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	#main-slide .item img.img-plan-confia-two {
+		width:30%;
 	}
 
 	#content {
-		height: 710px;
-		background-image: url(../images/slider/bg1.png);
-		background-size: 100% 710px;
-	}
-
-	#main-slide .item img{
-		height: 710px;
-	}
-}*/
-
-/*@media(min-height:768px) and (min-width: 1325px) {
-	#home, #content {
-		height: 570px;
-	}
-
-	#content {
-		height: 570px;
-		background-image: url(../images/slider/bg1.png);
-		background-size: 100% 570px;
-	}
-
-	#main-slide .item img{
-		height: 570px;
+		height: 573px;
 	}
 
 	.img-responsive.header-image {
 		max-width: 25%;
 		margin-top: -10px;
 	}
+
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: 0;
+	}
 }
-*/
+
+@media(max-width:767px) {
+
+	.footer-widget {
+		margin-bottom: 10px;
+	}
+
+	.img-responsive.footer-image-atlas {
+		max-width: 20%;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.img-responsive.footer-image-paralife {
+		max-width: 22%;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-widget p {
+		text-align: center;
+		font-weight: 500;
+		color: #fff;
+		font-size: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#main-slide .item img.img-bg {
+		min-width: 160%;
+	}
+
+	#main-slide .item img.img-plan-confia-one {
+		width:  30%;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	#main-slide .item img.img-plan-confia-two {
+		width:30%;
+	}
+
+	#content {
+		height: 573px;
+	}
+
+	.img-responsive.header-image {
+		max-width: 25%;
+		margin-top: -10px;
+	}
+
+}
